@@ -1,0 +1,67 @@
+cd /Users/shlomi/qa_workspace/SeleniumSimplified/InsertHomeTest; JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_92.jdk/Contents/Home M2_HOME=/usr/local/apache-maven-3.1.1 /usr/local/apache-maven-3.1.1/bin/mvn test
+Scanning for projects...
+                                                                        
+------------------------------------------------------------------------
+Building InsertHomeTest 1.0-SNAPSHOT
+------------------------------------------------------------------------
+
+--- maven-resources-plugin:2.6:resources (default-resources) @ InsertHomeTest ---
+Using 'UTF-8' encoding to copy filtered resources.
+Copying 1 resource
+
+--- maven-compiler-plugin:2.5.1:compile (default-compile) @ InsertHomeTest ---
+Nothing to compile - all classes are up to date
+
+--- maven-resources-plugin:2.6:testResources (default-testResources) @ InsertHomeTest ---
+Using 'UTF-8' encoding to copy filtered resources.
+skip non existing resourceDirectory /Users/shlomi/qa_workspace/SeleniumSimplified/InsertHomeTest/src/test/resources
+
+--- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ InsertHomeTest ---
+Nothing to compile - all classes are up to date
+
+--- maven-surefire-plugin:2.12.4:test (default-test) @ InsertHomeTest ---
+Surefire report directory: /Users/shlomi/qa_workspace/SeleniumSimplified/InsertHomeTest/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running FindInsertTest
+1479765615733	geckodriver	INFO	Listening on 127.0.0.1:10438
+Nov 22, 2016 12:00:15 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
+1479765616218	mozprofile::profile	INFO	Using profile path /var/folders/6g/yfz6k5dn5pb1hbwkkr0tddvc0000gn/T/rust_mozprofile.YSw5n0iqJ9x9
+1479765616229	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin
+1479765616269	geckodriver::marionette	INFO	Connecting to Marionette on localhost:55421
+1479765618252	Marionette	INFO	Listening on port 55421
+Nov 22, 2016 12:00:23 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+==> 00:00:23.564: Working with Firefox geckodriver
+==> 00:00:26.676: Currnt URL: https://www.google.co.uk/?gfe_rd=cr&ei=eG4zWMjyBMnI8ge22pXQDg
+==> 00:00:27.054: Currnt URL: https://www.google.co.uk/?gfe_rd=cr&ei=eG4zWMjyBMnI8ge22pXQDg#q=Insert.io
+Currnt Title: Google
+==> 00:00:28.141: Number of matching links found=2
+==> 00:00:28.142: Handling link #0
+==> 00:00:32.146: Currnt URL: https://www.insert.io/platform/
+Currnt Title: Mobile Engagement Platform | Mobile App Marketing | Insert
+==> 00:00:32.233: Navigating back to search results
+==> 00:00:33.471: Handling link #1
+==> 00:00:35.075: Currnt URL: https://marketingtechblog.com/insert-io/
+Currnt Title: Insert.io: A Codeless Mobile Engagement Platform | MarTech
+==> 00:00:35.150: Navigating back to search results
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 54598] WARNING: pipe error: Broken pipe: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 684
+[Child 54598] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+[Child 54598] ###!!! ABORT: Aborting on channel error.: file /builds/slave/m-rel-m64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2056
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.929 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time: 33.058s
+Finished at: Tue Nov 22 00:00:35 IST 2016
+Final Memory: 9M/123M
+------------------------------------------------------------------------
